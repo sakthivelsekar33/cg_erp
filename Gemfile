@@ -71,3 +71,4 @@ group :development do
 	gem 'lol_dba'
 end
 
+gem 'newrelic_rpm'

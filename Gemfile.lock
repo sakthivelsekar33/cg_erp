@@ -86,6 +86,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.2)
+    newrelic_rpm (3.7.1.180)
     parser (2.1.1)
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
@@ -199,6 +200,7 @@ DEPENDENCIES
   jquery-rails
   lol_dba
   meta_request
+  newrelic_rpm
   pg
   pry-plus
   pry-rails
