@@ -17,10 +17,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: cg_erp_two_development
+  database: cg_erp_development
   pool: 5
-  username: cg_erp_two
-  password:
+  username: postgres
+  password: postgres
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -46,15 +46,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: cg_erp_two_test
+  database: cg_erp_test
   pool: 5
-  username: cg_erp_two
-  password:
+  username: postgres
+  password: postgres
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: cg_erp_two_production
+  database: cg_erp_production
   pool: 5
-  username: cg_erp_two
-  password:
+  username: postgres
+  password: postgres

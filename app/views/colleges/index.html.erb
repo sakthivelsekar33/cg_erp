@@ -1,0 +1,37 @@
+<h1>Listing colleges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Address line one</th>
+      <th>Address line two</th>
+      <th>Zip</th>
+      <th>Sub domain</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @colleges.each do |college| %>
+      <tr>
+        <td><%= college.name %></td>
+        <td><%= college.code %></td>
+        <td><%= college.address_line_one %></td>
+        <td><%= college.address_line_two %></td>
+        <td><%= college.zip %></td>
+        <td><%= college.sub_domain %></td>
+        <td><%= link_to 'Show', college %></td>
+        <td><%= link_to 'Edit', edit_college_path(college) %></td>
+        <td><%= link_to 'Destroy', college, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New College', new_college_path %>

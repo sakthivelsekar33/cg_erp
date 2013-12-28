@@ -43,3 +43,31 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+	#for debugging
+	gem 'pry-rails'
+	gem 'pry-plus'
+	gem 'better_errors'
+	gem 'meta_request'
+
+	#for style guide and best paractices
+	gem 'rubocop'
+
+	#performance monitoring
+	# gem 'newrelic_rpm'
+	gem 'request-log-analyzer'
+
+	#remove assets rendering in logs
+	gem 'quiet_assets'
+
+	#thin server for development
+	gem 'thin'
+
+	#to reduce db queries, check eager loaded data
+	gem 'bullet'
+
+	#will give advise on DB indexing
+	gem 'lol_dba'
+end
+
